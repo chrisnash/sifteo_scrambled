@@ -57,7 +57,7 @@ how about 36? Or even 66?
 
 ![Medium level: 36 balls][medium]
 
-[Hard level: 66 balls][hard]
+![Hard level: 66 balls][hard]
 
 ### Suggestions
 
