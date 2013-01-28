@@ -1,5 +1,4 @@
-sifteo_scrambled
-================
+### About Scrambled
 
 _scrambled_ is an entry for the Experimental Gameplay Project Sifteo competition.
 
@@ -9,8 +8,7 @@ _scrambled_ is based on familiar puzzle games that slide tiles or roll colored b
 However, using the cubes, we can produce a game board that change by moving the cubes
 around.
 
-Launching
----------
+### Launching
 
 The _scrambled_ proof-of-concept demo may be launched by downloading the file
 [scrambled.elf][scrambled_elf]. If the Sifteo SDK is installed, It may be executed in the Sifteo simulator
@@ -22,8 +20,7 @@ or installed on the Sifteo Base to be played on real hardware with
 
     $ swiss install scrambled.elf
 
-How To Play
------------
+### How To Play
 
 Each cube contains a section of pipe, each with several different colored balls. There are
 a different number of balls in each pipe, and a corresponding number of balls of each color.
@@ -62,8 +59,7 @@ how about 36? Or even 66?
 
 [Hard level: 66 balls][hard]
 
-Suggestions
------------
+### Suggestions
 
 The idea is to present a very tactile game; the tilt operation will be a natural 'twist'
 when holding the two cubes together, one in each hand. This might require some adjustments
