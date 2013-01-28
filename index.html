@@ -15,45 +15,112 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Sifteo scrambled</h1>
+        <h1>Sifteo Scrambled</h1>
         <p>Distribution of the 'scrambled' entry for the Experimental Gameplay Project Sifteo competition.</p>
 
         <p class="view"><a href="https://github.com/chrisnash/sifteo_scrambled">View the Project on GitHub <small>chrisnash/sifteo_scrambled</small></a></p>
 
 
         <ul>
-          <li><a href="https://github.com/chrisnash/sifteo_scrambled/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/chrisnash/sifteo_scrambled/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/chrisnash/sifteo_scrambled/raw/master/scrambled.elf">Download <strong>ELF File</strong></a></li>
           <li><a href="https://github.com/chrisnash/sifteo_scrambled">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
-        <h3>Welcome to GitHub Pages.</h3>
+<h3>About Scrambled</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p><em>scrambled</em> is an entry for the Experimental Gameplay Project Sifteo competition.</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<p>The idea behind <em>scrambled</em> was to construct a puzzle game using three Sifteo cubes that
+would use the cube's capabilities to produce a game that was only possible on the cubes.
+<em>scrambled</em> is based on familiar puzzle games that slide tiles or roll colored balls.
+However, using the cubes, we can produce a game board that change by moving the cubes
+around.</p>
+
+<h3>Launching</h3>
+
+<p>The <em>scrambled</em> proof-of-concept demo may be launched by downloading the file
+<a href="https://github.com/chrisnash/sifteo_scrambled/raw/master/scrambled.elf" title="Scrambled ELF file">scrambled.elf</a>. If the Sifteo SDK is installed, It may be executed in the Sifteo simulator
+either from the icon or with</p>
+
+<pre><code>$ siftulator scrambled.elf
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>or installed on the Sifteo Base to be played on real hardware with</p>
 
-<h3>Designer Templates</h3>
+<pre><code>$ swiss install scrambled.elf
+</code></pre>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h3>How To Play</h3>
 
-<h3>Rather Drive Stick?</h3>
+<p>Each cube contains a section of pipe, each with several different colored balls. There are
+a different number of balls in each pipe, and a corresponding number of balls of each color.</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p><img src="https://github.com/chrisnash/sifteo_scrambled/raw/master/initial.png" alt="Initial layout" title="Initial display" /></p>
 
-<h3>Authors and Contributors</h3>
+<p>Pipes may be joined in pairs to form closed loops by rotating the cubes and neighboring
+the open sides of the pipes together (drag and rotate the cubes with the mouse, or click
+and tap space to quickly rotate).</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p><img src="https://github.com/chrisnash/sifteo_scrambled/raw/master/neighbor.png" alt="Neighbor two cubes" title="Neighbor cubes" /></p>
 
-<h3>Support or Contact</h3>
+<p>Balls may be rolled around the pipes by tilting one of the neighbored cubes up or down
+to rotate the balls in either direction (right-drag or shift-drag the cube). Don't worry,
+a single tilt will just rotate the balls one notch around the loop.</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p><img src="https://github.com/chrisnash/sifteo_scrambled/raw/master/tilt.png" alt="Tilt a neighbor" title="Tilt a neighbored cube" /></p>
+
+<p><img src="https://github.com/chrisnash/sifteo_scrambled/raw/master/aftertilt.png" alt="Result of the tilt" title="Result after a tilt" /></p>
+
+<p>The initial configuration of the balls may be randomly shuffled by shaking one of the cubes.
+To make this easier to do in the siftulator, you may also flip a cube face down to shuffle
+(while mouse clicking on a cube, press X).</p>
+
+<p><img src="https://github.com/chrisnash/sifteo_scrambled/raw/master/flip.png" alt="Flip or shake to shuffle" title="Flip or shake to shuffle" /></p>
+
+<p>Of course, the object of the game is to restore the balls to their original configuration,
+each pipe in a single color. One pipe is reasonably easy; all three pipes presents a genuine
+challenge. The puzzle is always solvable!</p>
+
+<p>There are three difficulty levels in the demo. Just touch one of the screens to switch to
+a different level. The game starts on easy, with 24 balls. If you think you can manage that,
+how about 36? Or even 66?</p>
+
+<p><img src="https://github.com/chrisnash/sifteo_scrambled/raw/master/medium.png" alt="Medium level: 36 balls" title="Medium level: 36 balls" /></p>
+
+<p><a href="https://github.com/chrisnash/sifteo_scrambled/raw/master/hard.png" title="Hard level: 66 balls">Hard level: 66 balls</a></p>
+
+<h3>Suggestions</h3>
+
+<p>The idea is to present a very tactile game; the tilt operation will be a natural 'twist'
+when holding the two cubes together, one in each hand. This might require some adjustments
+of the tilt sensitivity to give the most satisfying 'feel' to the puzzle in the player's
+hands.</p>
+
+<p>The game readily extends to more cubes, by adding more pipes and more colors. With sufficient
+cubes, the game may be played cooperatively (each player working on a subset of the cubes)
+or competitively (by having two or more separate games running simultaneously on a group
+of the cubes for each player). The number of cubes is limited by the amount of video memory
+required to perform the animations and to store the graphics for all the balls; that should
+support quite a fair amount of cubes.</p>
+
+<p>For added challenges, the individual balls may be labelled, for example, requiring the
+players to not only place the colors correctly but also in the right order. A thematic
+element may be to label the cubes with letters, thus requiring solving an anagram.</p>
+
+<p>One suggestion for a game setting would be something like in Word Caravan. Each puzzle
+solved (a 'small' reward for a single color solution, a larger reward for an all colors
+solution) would reveal a piece of an image - for example, prehaps retrieving pieces of
+a work of art in an art gallery. Complete the puzzle to unlock harder levels.</p>
+
+<p>The number of puzzles available can be quite large. Each pipe can contain anywhere between
+4 and 23 balls. While the dynamics of the puzzles remain the same, the moves to be
+discovered to master each puzzle and completely solve it can depend a lot on the number
+of balls in each cube, especially if the balls are individually labelled.</p>
+
+<p>And yes, for those who are interested, there are indeed as many as 23 balls moving on
+each cube on the hardest level, and no, they are not all sprites. Another part of the
+challenge for me was to make everything animate as smoothly as possible on the cubes.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/chrisnash">chrisnash</a></p>
